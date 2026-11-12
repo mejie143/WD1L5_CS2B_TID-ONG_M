@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GroceryKo - My Grocery List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="grocery-page">
+
+    <!-- GroceryKo Header -->
+    <header class="grocery-header">
+        <h1>GroceryKo 🛒</h1>
+        <p>Your personal grocery organizer</p>
+    </header>
+
+    <!-- Main Grocery Container -->
+    <section id="grocerySection">
+
+        <div class="grocery-intro">
+            <h2>Grocery Item List</h2>
+            <p>What do you need to buy today?</p>
+        </div>
+
+        <!-- Grocery Input -->
+        <div class="grocery-form">
+
+            <label>Item Name</label>
+            <input type="text"
+                   id="item_name"
+                   placeholder="Enter grocery item...">
+
+            <label>Quantity</label>
+            <input type="number"
+                   id="item_qty"
+                   placeholder="Enter quantity..."
+                   min="1">
+
+            <div class="grocery-buttons">
+                <button onclick="addItem()">+ Add Item</button>
+                <button onclick="clearList()">Clear List</button>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Grocery List -->
+        <div class="list-container">
+
+            <h2>Ang Listahan </h2>
+
+            <p class="list-description">
+                Your grocery items will appear here.
+            </p>
+
+            <ul id="groceryList"></ul>
+
+        </div>
+
+    </section>
+
+    <script src="js/list.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+/* remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* main page desige */
+body {
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/* Main book container */
+.signup-book {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    min-height: 430px;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/*  LEFT PAGE */
+
+.book-left {
+    width: 40%;
+    background-color: #E5EFCF;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 3px solid #D1DCC2;
+}
+
+.book-left h1 {
+    font-size: 32px;
+    color: #315E3C;
+    margin-bottom: 5px;
+}
+
+.book-left h2 {
+    font-size: 25px;
+    color: #547B45;
+    margin-bottom: 30px;
+}
+
+.book-decoration {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.book-left p {
+    color: #526747;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.book-left .welcome-text {
+    margin-top: 20px;
+}
+
+/* RIGHT PAGE - REGISTRATION */
+
+#registrationSection {
+    width: 60%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 30px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Registration inputs */
+#registrationSection input {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 5px;
+}
+
+/* Registration labels */
+#registrationSection label {
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+/* Registration button */
+#registrationSection button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 11px;
+}
+
+/*RESPONSIVE DESIGN */
+
+@media screen and (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .signup-book {
+        flex-direction: column;
+        max-width: 430px;
+    }
+
+    .book-left {
+        width: 100%;
+        padding: 25px 20px;
+        border-right: none;
+        border-bottom: 3px solid #D1DCC2;
+    }
+
+    .book-left h1 {
+        font-size: 27px;
+    }
+
+    .book-left h2 {
+        margin-bottom: 15px;
+    }
+
+    .book-decoration {
+        margin-bottom: 10px;
+    }
+
+    .book-left .welcome-text {
+        margin-top: 10px;
+    }
+
+    #registrationSection {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* LOGIN DESIGN */
+
+.login-book {
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    min-height: 430px;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Left page - reuse registration design */
+.login-book .book-left {
+    width: 40%;
+}
+
+/* Right page - login form */
+#loginsection {
+    width: 60%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 40px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Login heading */
+#loginsection h2 {
+    text-align: center;
+    color: #315E3C;
+    margin-bottom: 25px;
+}
+
+/* Login input fields */
+#loginsection input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Login button */
+#loginsection button {
+    width: 100%;
+    background-color: #C8DA71;
+    color: #26372B;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+#loginsection button:hover {
+    background-color: #B5CA58;
+}
+
+/* Sign up link */
+.redirect-text {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #526747;
+}
+
+.redirect-text a {
+    color: #315E3C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redirect-text a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 650px) {
+
+    .login-book {
+        flex-direction: column;
+        max-width: 430px;
+    }
+
+    .login-book .book-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid #D1DCC2;
+    }
+
+    #loginsection {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+
+/* GROCERYKO - GROCERY LIST DASHBOARD */
+
+/* Main Page */
+.grocery-page {
+    background-color: antiquewhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* GroceryKo Header */
+.grocery-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grocery-header h1 {
+    color: #315E3C;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.grocery-header p {
+    color: #526747;
+    font-size: 14px;
+}
+
+/* Main White Container */
+#grocerySection {
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border: 2px solid #D6E2D3;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+.grocery-intro {
+    margin-bottom: 25px;
+}
+
+.grocery-intro h2 {
+    color: #315E3C;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.grocery-intro p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Input Labels */
+.grocery-form label {
+    display: block;
+    color: #405A43;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+/* Input Fields */
+.grocery-form input {
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #D5DED3;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #FAFCF8;
+}
+
+/* Input Focus */
+.grocery-form input:focus {
+    border-color: #8BA76D;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 167, 109, 0.15);
+}
+
+/* Buttons Container */
+.grocery-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* Add and Clear Buttons */
+.grocery-buttons button {
+    flex: 1;
+    margin: 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Add Button */
+.grocery-buttons button:first-child {
+    background-color: #C8DA71;
+    color: #26372B;
+}
+
+.grocery-buttons button:first-child:hover {
+    background-color: #B5CA58;
+}
+
+/* Clear Button */
+.grocery-buttons button:last-child {
+    background-color: #E5EFCF;
+    color: #315E3C;
+}
+
+.grocery-buttons button:last-child:hover {
+    background-color: #D3E3B8;
+}
+
+/* Separator */
+#grocerySection hr {
+    border: none;
+    border-top: 1px solid #E2EBDD;
+    margin: 25px 0;
+}
+
+/* Grocery List Heading */
+.list-container h2 {
+    color: #315E3C;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.list-description {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Grocery List Items */
+#groceryList {
+    list-style: none;
+    padding: 0;
+}
+
+#groceryList li {
+    background-color: #F3F7EF;
+    border: 1px solid #E0E9DE;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #405A43;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+
+    .grocery-page {
+        padding: 20px 12px;
+    }
+
+    #grocerySection {
+        padding: 22px 18px;
+    }
+
+    .grocery-header h1 {
+        font-size: 27px;
+    }
+
+    .grocery-buttons {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html>    
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="signup-book">
+
+    <!-- LEFT PAGE: BOOK COVER -->
+    <div class="book-left">
+
+        <h1>GroceryKo</h1>
+        <h2>Sign Up!</h2>
+
+        <p>Shop with your list, kadwak ay natago!</p>
+
+        <p class="welcome-text">
+            Create your account and start organizing
+            your grocery shopping with GroceryKo.
+        </p>
+
+    </div>
+        <!-- registration form -->
+
+        <section id="registrationSection">
+            <label>Full Name</label><br>
+            <input type="text" id="full_name" required><br>
+
+            <label>Address</label><br>
+            <input type="text" id="address" required><br>
+
+             <label>Username</label><br>
+            <input type="text" id="uname" required><br>
+
+             <label>Email Address</label><br>
+            <input type="email" id="email" required><br>
+
+             <label>Password</label><br>
+            <input type="password" id="pword" required><br>
+
+            <button onclick="saveUserRecord()">Sign Up</button>
+            <p id="regMessage"></p>
+        </section>
+
+    </div>
+        <!-- js here -->
+        <script src="js/reg.js"></script>
+
+    </body>
+</html>
